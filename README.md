@@ -78,5 +78,4 @@ For S3 Security, I would like to recommend using  Gateway VPC Endpoints, S3 ACL 
 }
 
 ---------------
-s3-bucket-dev-public-01-1j2q32tfwm3zx5x1g10l
 
