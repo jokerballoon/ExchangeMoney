@@ -91,6 +91,3 @@ public async Task<List<S3Object>> ListBucket(string bucketName)
             //}
         }
 
-
-AKIAIDG45YSB4SROJ53A
-pD3gHt0AQl1jXh53TyI0FZm4ffYtZi/JgtMUZUTP
