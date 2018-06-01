@@ -77,3 +77,16 @@ For S3 Security, I would like to recommend using  Gateway VPC Endpoints, S3 ACL 
 
 }
 
+---------------
+public async Task<List<S3Object>> ListBucket(string bucketName)
+        {
+            ListObjectsRequest request = new ListObjectsRequest();
+            request.BucketName = bucketName;
+
+            ListObjectsResponse response = await this.S3Client.ListObjectsAsync(request);
+            return response.S3Objects;
+            //foreach (S3Bucket b in response.Buckets)
+            //{
+            //    Console.WriteLine("{0}\t{1}", b.BucketName, b.CreationDate);
+            //}
+        }
