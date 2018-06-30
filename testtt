@@ -1,3 +1,31 @@
+CREATE TABLE `um_ms12_branch` (
+  `RUNNING_NO` int(11) NOT NULL DEFAULT '0' COMMENT 'Running Number',
+  `BRANCH_CODE` varchar(10) DEFAULT NULL COMMENT 'Branch Code ',
+  `BRANCH_NAME_EN` varchar(250) DEFAULT NULL COMMENT 'Branch Name English',
+  `BRANCH_NAME_TH` varchar(250) DEFAULT NULL COMMENT 'Branch Name Thai',
+  `ADDRESS` varchar(2000) DEFAULT NULL COMMENT 'Branch Address',
+  `TEL_NO` varchar(100) DEFAULT NULL COMMENT 'Telephone Number',
+  `FAX_NO` varchar(50) DEFAULT NULL COMMENT 'Fax Number',
+  `WORKING_DAY` varchar(100) DEFAULT NULL COMMENT 'Working Day',
+  `SERVICE_HOUR` varchar(100) DEFAULT NULL COMMENT 'Service Hour',
+  `STATUS` varchar(1) DEFAULT NULL COMMENT 'Status Active',
+  `LATITUDE` varchar(20) DEFAULT NULL COMMENT 'latitude',
+  `LONGITUDE` varchar(20) DEFAULT NULL COMMENT 'Longtitude',
+  `BRANCH_GROUP` varchar(50) DEFAULT NULL COMMENT 'Branch Group',
+  `PROVINCE_CODE` varchar(5) DEFAULT NULL COMMENT 'Province Code',
+  `AMPHUR_CODE` varchar(5) DEFAULT NULL COMMENT 'District Area Code',
+  `AREA_CODE` varchar(10) DEFAULT NULL COMMENT 'Area Code',
+  `BRANCH_ZONE` varchar(100) DEFAULT NULL COMMENT 'Branch Zone',
+  `CREATE_BY` varchar(50) DEFAULT NULL COMMENT 'Create Buy',
+  `SERVICE` varchar(255) DEFAULT NULL,
+  `CREATE_DATETIME` datetime DEFAULT NULL,
+  PRIMARY KEY (`RUNNING_NO`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='Branch';
+
+
+
+--------------------------------
+
 USE umayplus_db;
 
 insert into `um_ms12_branch`(`RUNNING_NO`,`BRANCH_CODE`,`BRANCH_NAME_EN`,`BRANCH_NAME_TH`,`ADDRESS`,`TEL_NO`,`FAX_NO`,`WORKING_DAY`,`SERVICE_HOUR`,`STATUS`,`LATITUDE`,`LONGITUDE`,`BRANCH_GROUP`,`PROVINCE_CODE`,`AMPHUR_CODE`,`AREA_CODE`,`BRANCH_ZONE`,`CREATE_BY`,`SERVICE`,`CREATE_DATETIME`) values (1,'020','Big C Nakornpathom','สาขาบิ๊กซี นครปฐม ','เลขที่ 754 ศูนย์การค้าบิ๊กซี ซูเปอร์เซ็นเตอร์ สาขานครปฐม ห้องเลขที่ 2CR207 ชั้น 2 ถนนเพชรเกษม ตำบลห้วยจรเข้ อำเภอเมือง จังหวัดนครปฐม 73000','0-3415-7961-4','0-3415-7965','วันจันทร์ - วันอาทิตย์','10.00 - 19.00 น.','Y','13.812438','100.072439','Commercial Facility','58','2851','5','กรุงเทพฯและปริมณฑล','p3705034','บัตรกดเงินสดยูเมะพลัสและยูเมะพลัส พรีเมียร์','2018-06-28 10:54:45');
