@@ -79,3 +79,10 @@ For S3 Security, I would like to recommend using  Gateway VPC Endpoints, S3 ACL 
 
 ---------------
 
+
+
+USE umayplusmanage_db;
+
+insert into `authen_menu`(`menuID`,`menuDescription`,`departmentID`,`createBy`,`createDateTime`,`updateBy`,`updateDateTime`) values ('100','CS-Report','12,33,34,35','IT','2018-06-28 14:45:04','IT','2018-06-28 14:47:01');
+insert into `authen_menu`(`menuID`,`menuDescription`,`departmentID`,`createBy`,`createDateTime`,`updateBy`,`updateDateTime`) values ('200','BP-UploadPromotion','81,33,34,35','IT','2018-06-28 14:48:51','IT','2018-06-28 14:48:55');
+insert into `authen_menu`(`menuID`,`menuDescription`,`departmentID`,`createBy`,`createDateTime`,`updateBy`,`updateDateTime`) values ('201','BP-UploadBranch','81,33,34,35','IT','2018-06-28 14:49:17','IT','2018-06-28 14:49:20');
